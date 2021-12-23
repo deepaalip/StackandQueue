@@ -6,10 +6,22 @@ private final MyLinklist myLinklist;
 	public Stack() {
 		this.myLinklist = new MyLinklist();
 	}
+	
 	public void push(Inode newNode) {
 		myLinklist.add(newNode);
 	}
+	
 	public void printStack() {
 		myLinklist.printMyNodes();
 	}
+	
+	public Inode peak() {
+		return myLinklist.head;
+	}
+	
+	public Inode pop() {
+		return myLinklist.popLast();
+	}
+	
+	
 }

@@ -9,7 +9,8 @@ public class StackMain {
 		stack.push(myFirstNode);
 		stack.push(mySecondNode);
 		stack.push(myThirdNode);
-		
+		stack.peak();
+		stack.pop();
 		stack.printStack();
 	}
 
